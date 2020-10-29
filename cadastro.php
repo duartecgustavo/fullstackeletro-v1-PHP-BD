@@ -34,39 +34,38 @@
         <section class="cadastro">
 
 
-            <form class="cadastroform"action="cadastroUsuario.php" method="post">
+            <form class="cadastroform" action="./PHP+BD/cadastroUsuario.php" method="post">
 
                 <h1 class="h1cadastro">INFORMAÇÕES PESSOAIS</h1>
 
                 <label class="labelcadastro" for="cadastro">NOME COMPLETO</label>
-                <input class="inputcadastro" type="text" name="nome" placeholder="digite seu nome">
+                <input class="inputcadastro" type="text" name="nome" placeholder="digite seu nome" require>
 
                 <label class="labelcadastro" for="email">E-MAIL</label>
-                <input class="inputcadastro" type="email" name="email" placeholder="digite seu E-mail">
+                <input class="inputcadastro" type="email" name="email" placeholder="digite seu E-mail" require>
 
                 <label class="labelcadastro" for="senha">SENHA</label>
-                <input class="inputcadastro" type="password" name="senha" placeholder="digite sua senha">
+                <input class="inputcadastro" type="password" name="senha" placeholder="digite sua senha" require>
 
-                <label class="labelcadastro" for="nasc">DATADE NASCIMENTO</label>
-                <input class="inputcadastro" type="date" name="nascimento" placeholder="digite sua datade nascimento">
+                <label class="labelcadastro" for="nasc">DATA DE NASCIMENTO</label>
+                <input class="inputcadastro" type="date" name="nascimento" placeholder="digite sua datade nascimento" require>
 
-                <!-- ---------------------------------------------------------------------------------------------- -->
 
                 <h1 class="h1cadastro">ENDEREÇO</h1>
 
                 <label class="labelcadastro" for="cep">CEP</label>
-                <input class="inputcadastro" type="text" name="cep" placeholder="digite o cep de sua rua">
+                <input class="inputcadastro" type="text" name="cep" placeholder="digite o cep de sua rua" require>
 
                 <label class="labelcadastro" for="rua" style="font-family: Cambria;">RUA</label>
-                <input class="inputcadastro" type="text" name="rua" placeholder="digite sua rua">
+                <input class="inputcadastro" type="text" name="rua" placeholder="digite sua rua" require>
 
                 <label class="labelcadastro" for="bairro" >BAIRRO</label>
-                <input class="inputcadastro" type="text" name="bairro" placeholder="digite seu bairro">
+                <input class="inputcadastro" type="text" name="bairro" placeholder="digite seu bairro" require>
 
                 <label class="labelcadastro" for="cidade">CIDADE/UF</label>
-                <input class="inputcadastro" type="text" name="cidade" placeholder="digite sua cidade e UF">
+                <input class="inputcadastro" type="text" name="cidade" placeholder="digite sua cidade e UF" require>
 
-                <button class="botaocadastrar" class="botao-cadast" type="submit" onclick="alert('CADASTRO REALIZADO!')">CADASTRAR</button>
+                <button class="botaocadastrar" class="botao-cadast" type="submit">CADASTRAR</button>
 
             </form>
 
