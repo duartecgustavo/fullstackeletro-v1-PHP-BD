@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,34 +50,6 @@
             </div>
         </section>
 
-        <!--LOGIN-->
-        <section class="loginbar">
-            <p class="logologin"><img width="15%" src="imgs/login.jpg"></p>
-
-
-
-            <div class="logincontent">
-                <p class="imglogin"><img src="imgs/imglogin.svg"></p>
-
-
-
-                <form class="loginform" action="./PHP+BD/loginUsuario.php" method="post">
-
-                    <label class="loginlabel" for="email">E-MAIL</label>
-                    <input class="logininput" name="email" type="email" placeholder="digite seu E-mail">
-
-                    <label class="loginlabel" for="senha">SENHA</label>
-                    <input class="logininput" name="senha" type="password" placeholder="digite sua senha">
-                    <br/>
-
-                    <button class="logarlogin" type="submit">LOGAR</button>
-                    <a class="logincadastrarlink" href="cadastro.php" target="_blank" >não tem cadastro? Clique Aqui!</a>
-                </form>
-
-
-
-            </div>
-        </section>
     </main>
 
     <!--RODAPÉ-->
