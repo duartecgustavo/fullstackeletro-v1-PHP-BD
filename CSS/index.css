@@ -1,0 +1,112 @@
+/* BODY */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.imglogo{
+    height: 12vh;
+}
+
+/* sm 576
+md 768
+lg 992
+xl 1200 
+
+LOGIN HOME/INDEX */
+@media (max-width: 1200px) {
+    .banner{
+        display: none;
+    }}
+/* @media (max-width: 992px) {
+
+}}*/
+/* @media (max-width: 768px) {
+    .logincontent, .imglogin img {
+        display: none;
+    }
+    .loginform{
+        width: 768px;
+        height: 100%;
+    }
+} */
+
+/*@media (max-width: 576px) {
+
+}} */
+
+
+.logincontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: #ba0303b4;
+}
+.imglogin{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 80vw;
+    height: 60vh;
+}
+.imglogin img{
+    position: relative;
+    z-index: 4;
+    height: 50vh;
+}
+
+
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7vh 0vh 0vh 7vh;
+    background-color:  #292727;
+    width: 60vw;
+    height: 50vh;
+
+}
+.loginlabel {
+    display: block;
+    width: 30vw;
+    margin: 0.5vh 0vh 0.5vh 0vh;
+    border: none;
+    color: seashell;
+    font-weight: bold;
+    font-size: 3.5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.3vw;
+}
+.logininput{
+    height: 4vh;
+    width: 30vw;
+    text-align: center;
+    border: none;
+    border-radius: 0.5vh;
+    font-size: 2vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logarlogin{
+    height: 4.5vh;
+    width: 30vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #CE4D4D;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logincadastrarlink{
+    margin-top: 0.1vh;
+    padding-right: 16vw;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: seashell;
+}
+/* FIM - LOGIN */

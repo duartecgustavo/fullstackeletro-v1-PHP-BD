@@ -9,57 +9,49 @@
     <title>Full-Stack-Eletro</title>
 
     <!-- LINK CSS - estilo da pagina-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/global.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/home.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
 
 </head>
 <body>
 
-    <!--MENU-->
-    <div class="menu">
-        <nav  class="menubar">
-            <a href="index.html"><img style="font-family: Comic Sans MS;" class="logomenumain" width="200px" src="imgs/logo3.jpg" alt="HOME"></a>
-            <a href="produtos.html"><img class="logomenu" width="200px" src="imgs/produtoslogo.jpg" alt="PRODUTOS"></a>
-            <a href="lojas.html"><img class="logomenu" width="200px" src="imgs/lojaslogo.jpg" alt="LOJAS"></a>
-            <a href="contato.html"><img class="logomenu" width="200px" src="imgs/contatoslogo.jpg" alt="CONTATOS"></a>
-        </nav>
-    </div>
-
     <!-- CORPO DA PAGINA-->
-    <main>
-        <br> <br> <br>
+    <main>  
         <!--LOGO PAGINA-->
-        <section class="logo">
-            <img class="imglogo" src="imgs/logo2.png">
+        <section  style="background-color: #ba0403; text-align: center; position: relative;">
+            <img  class="imglogo" src="imgs/logo2.png">
         </section>
 
-        <!--CAPA-->
-        <section class="capa">
-            <div class="banner">
-                <img class="imagemcapa" id="imagemcapa" width="100%" alt="capa" src="imgs/maincapa.jpg">
-                
-                <div class="maincapadiv">
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa1" class="maincapa">
-                    <label for="maincapa1"></label>
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa2" class="maincapa">
-                    <label for="maincapa2"> </label>
-                    <input type="radio" onclick="trocaCapa()" name="mainbtn" id="maincapa3" class="maincapa">
-                    <label for="maincapa3"> </label>
-                </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" style="height: 85vh;" src="imgs/maincapa.jpg" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" style="height: 85vh;" src="imgs/maincapa2.jpg" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" style="height: 85vh;" src="imgs/maincapa3.jpg" alt="Terceiro Slide">
+              </div>
             </div>
-        </section>
-
-        <!--LOGIN-->
-        <section class="loginbar">
-            <p class="logologin"><img width="15%" src="imgs/login.jpg"></p>
-
-
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
 
             <div class="logincontent">
                 <p class="imglogin"><img src="imgs/imglogin.svg"></p>
-
-
 
                 <form class="loginform" action="./PHP+BD/loginUsuario.php" method="post">
 
@@ -74,22 +66,20 @@
                     <a class="logincadastrarlink" href="cadastro.php" target="_blank" >não tem cadastro? Clique Aqui!</a>
                 </form>
 
-
-
             </div>
-        </section>
     </main>
 
     <!--RODAPÉ-->
-    <footer class="rodape" style="position: relative;">
-        <!-- FORMAS DE PAGAMENTO-->
-        <p class="logofooter"><img width="25%" src="imgs/pagamentos.jpg"></p>
-
-        <img class="imgpag" alt="Formas_De_Pagamento" title="Formas De Pagamento" src="imgs/pagamentos.png">    
-
-        <p class="copyright">© 2020 - Recode Pró - Full-Stack-Eletro</p>
+    <footer class="container-fluid text-center font-weight-bold pb-4" style="position: relative; background: #CE4D4D;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 2vh;">
+        © 2020 - Recode Pró - Full-Stack-Eletro
     </footer>
 
     <script src="./JS/eventos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+
 </body>
 </html>

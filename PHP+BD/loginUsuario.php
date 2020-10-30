@@ -49,9 +49,11 @@ if (strlen($email)> 3 && strlen($senha) > 3){
 
 
 } else {
-    echo "Não deu certo!";
-    echo "$email";
-    echo "$senha";
+    echo 
+    "<script>
+        alert('E-mail ou senha invalidos!')
+        location.href='http://localhost/fullstackeletro.2.0/'
+    </script>"; 
 }
 
 ?>
