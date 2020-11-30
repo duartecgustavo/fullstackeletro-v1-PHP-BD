@@ -3,12 +3,12 @@
 session_start();
 // DECLARAÇÃO DE VARIAVEIS
 
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
 // Validando informações
-if (strlen($email)> 3 && strlen($senha) > 3){
-    
+if (strlen($email) > 3 && strlen($senha) > 3) {
+
     // Realizando conexão com banco
     $conn = mysqli_connect("localhost", "root", "", "fseletro");
 
@@ -16,8 +16,7 @@ if (strlen($email)> 3 && strlen($senha) > 3){
     $resultado_consulta = $conn->query("SELECT * from usuarios where email = '$email' AND senha = '$senha'");
     $usuarios = mysqli_fetch_row($resultado_consulta);
 
-    if($usuarios)
-    {
+    if ($usuarios) {
 
         echo '<pre>';
         print_r($usuarios);
@@ -27,33 +26,25 @@ if (strlen($email)> 3 && strlen($senha) > 3){
         $_SESSION['email'] = $usuarios[2];
         $_SESSION['cep'] = $usuarios[4];
         $_SESSION['senha'] = $usuarios[3];
- 
+
         header('Location: http://localhost/fullstackeletro.2.0/home.php');
         "<script>
             alert('Logado')
 
         </script>";
         // location.href='http://localhost/fullstackeletro.2.0/home.php'
-    }
- 
-    else
-    {
+    } else {
         // header('Location: index.html');
-        echo 
-        "<script>
+        echo
+            "<script>
             alert('E-mail ou senha invalidos!')
             location.href='http://localhost/fullstackeletro.2.0/'
         </script>";
     }
-
-
-
 } else {
-    echo 
-    "<script>
+    echo
+        "<script>
         alert('E-mail ou senha invalidos!')
         location.href='http://localhost/fullstackeletro.2.0/'
-    </script>"; 
+    </script>";
 }
-
-?>

@@ -120,7 +120,7 @@ if (strlen($nome) > 3 && strlen($email) > 3 && strlen($senha) > 3 && strlen($cep
 
         // IDADE INSUFICIENTE
 
-} else if (idade < 18) {
+} else if ($idade < 18) {
 
     echo "<script>
             alert('Você precisa ter 18 anos para se cadastrar.')
@@ -128,12 +128,4 @@ if (strlen($nome) > 3 && strlen($email) > 3 && strlen($senha) > 3 && strlen($cep
         </script>
         ";
 }
-
-    //CHECANDO CONEXÃO
-
-    // if(!$conn){
-    //     die("A conecção falhou".mysqli_connect_error());
-    // } else {
-    //     echo "Deu tudo certo!";
-    // }
-// ?>
+ ?>
